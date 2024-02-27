@@ -71,7 +71,10 @@ function generatePassword(lower, upper, number, symbol, length) {
         final += randomFunc[obDetails]();
       });
     }
-    console.log(final.slice(0, length))
+    if(final.slice(0, length) === '652585') {
+      console.log('is the same')
+      console.log(final.slice(0, length))
+    }
     return final.slice(0, length);
   }
   return "";
